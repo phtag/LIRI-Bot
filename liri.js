@@ -81,10 +81,28 @@ if (UserRequest === 'concert-this') {
     // console.log(data.tracks); 
     });
 } else if (UserRequest === 'movie-this') {
-    axios.get("http://www.omdbapi.com/?t=remember+the+titans&y=&plot=short&apikey=trilogy").then(
-        function(response) {
-          console.log("The movie's rating is: " + response.data.imdbRating);
+  var movie = process.argv.slice(3).join('+');
+
+  // axios.get("http://www.omdbapi.com/?t=remember+the+titans&y=&plot=short&apikey=trilogy").then(
+  axios.get("http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy").then(
+    function(response) {
+      var RottenTomatoesRating;
+      console.log('=======================================================================');
+      console.log('Movie name: ' + response.data.Title);
+      console.log('Year released: ' + response.data.Year);
+      response.data.Ratings.forEach(function(element) {
+        if (element.Source === 'Rotten Tomatoes') {
+          RottenTomatoesRating = element.Value;
         }
+      });
+      console.log('IMDB rating: ' + response.data.imdbRating);
+      console.log('Rotten Tomatoes rating: ' + RottenTomatoesRating);
+      console.log('Country where produced: ' + response.data.Country);
+      console.log('Language: ' + response.data.Language);
+      console.log('Plot: ' + response.data.Plot);
+      console.log('Actors: ' + response.data.Actors);   
+      console.log('=======================================================================');
+    }
       );
 } else if (UserRequest === 'do-what-it-says') {
 }
