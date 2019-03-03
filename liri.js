@@ -92,7 +92,8 @@ function spotifyThisSong(song) {
   //   data.tracks.items.artists.foreach(function(element) {
   //       console.log(element);
 
-  // console.log(data.tracks.items); 
+  console.log(data.tracks.items[0]); 
+  console.log('==================================================');
   data.tracks.items.forEach(function(element) {
       //console.log(element);
       // console.log(element.album);
@@ -100,18 +101,35 @@ function spotifyThisSong(song) {
       // console.log(element.album.name);
       // console.log(element.album);
       // console.log(element.album);
+      var songName = element.name;
       var qArtists = element.album.artists;
+      var ArtistsNames = "";
       qArtists.forEach(function(thisElement) {
-        console.log(thisElement.external_urls);
+        // console.log(thisElement);
+        // console.log(thisElement.external_urls);
+        //console.log('Artist name: ' + thisElement.name);
+        if (ArtistsNames === '') {
+          ArtistsNames = thisElement.name;
+        } else {
+          ArtistsNames += ', ' + thisElement.name;
+        }
       })
 
       // GOOD Results...
-      // console.log(element.album.artists);
-      // console.log(element.album.id);
-      // console.log(element.album.name);
-      // console.log(element.album.release_date);
-      // console.log(element.album.external_urls);
-      // console.log(element.album.total_tracks);
+      // console.log('Artists: ' + element.album.artists);
+      console.log('Song name: ' + songName);
+      console.log('Artist(s): ' + ArtistsNames);
+      console.log('ID: ' + element.album.id);
+      console.log('Album name: ' + element.album.name);
+      console.log('Album release date: ' + element.album.release_date);
+      console.log('URLs: ' + element.album.external_urls);
+      console.log('Total tracks: ' + element.album.total_tracks);
+      console.log('==================================================');
+
+//       Artist(s)
+// The song's name
+// A preview link of the song from Spotify
+// The album that the song is from
   })
   // console.log(data.tracks); 
   });
