@@ -37,9 +37,16 @@ function respondToUserRequest(UserRequest, queryItem) {
   } else if (UserRequest === 'do-what-it-says') {
     fs.readFile('./random.txt', 'utf8', function(error, data) {
       var arguments = data.split(',');
-      console.log(arguments);
       var which = arguments[0];
-      var queryItem = arguments[1].split(' ');
+      console.log(arguments[1]);
+      var secondArgument = arguments[1].replace(/\"/g, "");
+      var queryItem = [];
+      if (secondArgument.indexOf(' ') > 0) {
+        queryItem = secondArgument.split(' ');
+      } else {
+        queryItem.push(secondArgument.trim());
+      }
+      console.log(queryItem);
       respondToUserRequest(arguments[0], queryItem);
     });
   }
