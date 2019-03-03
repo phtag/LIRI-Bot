@@ -89,49 +89,32 @@ function spotifyThisSong(song) {
         if (err) {
       return console.log('Error occurred: ' + err);
     }  
-  //   data.tracks.items.artists.foreach(function(element) {
-  //       console.log(element);
-
-  console.log(data.tracks.items[0]); 
-  console.log('==================================================');
-  data.tracks.items.forEach(function(element) {
-      //console.log(element);
-      // console.log(element.album);
-      // console.log(element);
-      // console.log(element.album.name);
-      // console.log(element.album);
-      // console.log(element.album);
-      var songName = element.name;
-      var qArtists = element.album.artists;
-      var ArtistsNames = "";
-      qArtists.forEach(function(thisElement) {
-        // console.log(thisElement);
-        // console.log(thisElement.external_urls);
-        //console.log('Artist name: ' + thisElement.name);
-        if (ArtistsNames === '') {
-          ArtistsNames = thisElement.name;
-        } else {
-          ArtistsNames += ', ' + thisElement.name;
-        }
-      })
-
-      // GOOD Results...
-      // console.log('Artists: ' + element.album.artists);
-      console.log('Song name: ' + songName);
-      console.log('Artist(s): ' + ArtistsNames);
-      console.log('ID: ' + element.album.id);
-      console.log('Album name: ' + element.album.name);
-      console.log('Album release date: ' + element.album.release_date);
-      console.log('URLs: ' + element.album.external_urls);
-      console.log('Total tracks: ' + element.album.total_tracks);
-      console.log('==================================================');
-
-//       Artist(s)
-// The song's name
-// A preview link of the song from Spotify
-// The album that the song is from
-  })
-  // console.log(data.tracks); 
+    console.log(data.tracks.items[0]); 
+    console.log('==================================================');
+    data.tracks.items.forEach(function(element) {
+        var songName = element.name;
+        var qArtists = element.album.artists;
+        var ArtistsNames = "";
+        var external_URLs = [];
+        // Create a list of the artists for this track
+        qArtists.forEach(function(thisElement) {
+          external_URLs.push(thisElement.external_urls.spotify);
+          if (ArtistsNames === '') {
+            ArtistsNames = thisElement.name;
+          } else {
+            ArtistsNames += ', ' + thisElement.name;
+          }
+        })
+        // Display the results for the user
+        console.log('Song name: ' + songName);
+        console.log('Artist(s): ' + ArtistsNames);
+        console.log('ID: ' + element.album.id);
+        console.log('Album name: ' + element.album.name);
+        console.log('Album release date: ' + moment(element.album.release_date).format('LLLL'));
+        console.log('Preview URLs: ' + element.preview_url);
+        console.log('Total tracks: ' + element.album.total_tracks);
+        console.log('==================================================');
+    })
   });
 }
 
