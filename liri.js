@@ -114,6 +114,24 @@ function spotifyThisSong(song) {
         console.log('Preview URLs: ' + element.preview_url);
         console.log('Total tracks: ' + element.album.total_tracks);
         console.log('==================================================');
+
+        var songData = [
+          'Song name: ' + songName,
+          'Artist(s): ' + ArtistsNames,
+          'ID: ' + element.album.id,
+          'Album name: ' + element.album.name,
+          'Album release date: ' + moment(element.album.release_date).format('LLLL'),
+          'Preview URLs: ' + element.preview_url,
+          'Total tracks: ' + element.album.total_tracks,
+        ].join('\n\n');
+      fs.appendFile('Spotify.txt', songData, function(err) {
+          if (err) {
+
+          } else {
+              console.log('Successfully wrote to actor.txt');
+          }
+      });
+
     })
   });
 }
