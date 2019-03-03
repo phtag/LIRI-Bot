@@ -20,8 +20,11 @@ function respondToUserRequest(UserRequest, queryItem) {
     //________
     // SPOTIFY
     //
-    // var song = process.argv.slice(3).join(' ');
     var song = queryItem.join(' ');
+    if (song === '') {
+      // Default song
+      song = 'The Sign';
+    }
 
     spotifyThisSong(song);
 
@@ -74,6 +77,23 @@ function concertThis(artist) {
       console.log('Venue location: ' + element.venue.city + ", " + element.venue.country);
       console.log('Date: ' + moment(element.datetime).format('LLLL'));
       console.log('================================');
+ 
+      var concertData = [
+        'Performing bands: '+ lineUp,
+        'Venue name: ' + element.venue.name,
+        'Venue location: ' + element.venue.city + ", " + element.venue.country,
+        'Date: ' + moment(element.datetime).format('LLLL'),
+        ].join('\n\n');
+      fs.appendFile('Concert.txt', concertData, function(err) {
+          if (err) {
+
+          } else {
+              // console.log('Successfully wrote to actor.txt');
+          }
+      });
+
+
+
     })
   });
 }
@@ -92,19 +112,20 @@ function spotifyThisSong(song) {
     console.log(data.tracks.items[0]); 
     console.log('==================================================');
     data.tracks.items.forEach(function(element) {
-        var songName = element.name;
-        var qArtists = element.album.artists;
-        var ArtistsNames = "";
-        var external_URLs = [];
-        // Create a list of the artists for this track
-        qArtists.forEach(function(thisElement) {
-          external_URLs.push(thisElement.external_urls.spotify);
-          if (ArtistsNames === '') {
-            ArtistsNames = thisElement.name;
-          } else {
-            ArtistsNames += ', ' + thisElement.name;
-          }
-        })
+      var songName = element.name;
+      var qArtists = element.album.artists;
+      var ArtistsNames = "";
+      var external_URLs = [];
+      // Create a list of the artists for this track
+      qArtists.forEach(function(thisElement) {
+        external_URLs.push(thisElement.external_urls.spotify);
+        if (ArtistsNames === '') {
+          ArtistsNames = thisElement.name;
+        } else {
+          ArtistsNames += ', ' + thisElement.name;
+        }
+      })
+      if (songName.toUpperCase() === song.toUpperCase()) {
         // Display the results for the user
         console.log('Song name: ' + songName);
         console.log('Artist(s): ' + ArtistsNames);
@@ -124,14 +145,14 @@ function spotifyThisSong(song) {
           'Preview URLs: ' + element.preview_url,
           'Total tracks: ' + element.album.total_tracks,
         ].join('\n\n');
-      fs.appendFile('Spotify.txt', songData, function(err) {
-          if (err) {
+        fs.appendFile('Spotify.txt', songData, function(err) {
+            if (err) {
 
-          } else {
-              console.log('Successfully wrote to actor.txt');
-          }
-      });
-
+            } else {
+                // console.log('Successfully wrote to actor.txt');
+            }
+        });
+      }
     })
   });
 }
@@ -155,5 +176,23 @@ function movieThis(movie) {
       console.log('Plot: ' + response.data.Plot);
       console.log('Actors: ' + response.data.Actors);   
       console.log('=======================================================================');
+ 
+      var movieData = [
+        'Movie name: ' + response.data.Title,
+        'Year released: ' + response.data.Year,
+        'IMDB rating: ' + response.data.imdbRating,
+        'Rotten Tomatoes rating: ' + RottenTomatoesRating,
+        'Country where produced: ' + response.data.Country,
+        'Language: ' + response.data.Language,
+        'Plot: ' + response.data.Plot,
+        'Actors: ' + response.data.Actors,  
+        ].join('\n\n');
+      fs.appendFile('Movie.txt', movieData, function(err) {
+          if (err) {
+
+          } else {
+              // console.log('Successfully wrote to actor.txt');
+          }
+      });
   });
 }
