@@ -2,6 +2,7 @@ require("dotenv").config();
 var keys = require("./keys.js");
 var axios = require("axios");
 var Spotify = require('node-spotify-api'); 
+var moment = require('moment');
 
 var UserRequest = process.argv[2];
 
@@ -27,10 +28,10 @@ if (UserRequest === 'concert-this') {
             lineUp += ', ' + element;
           }
         });
-        console.log(lineUp);
-        console.log(element.venue.name);
-        console.log(element.venue.city + "," + element.venue.country);
-        console.log(element.datetime);
+        console.log('Performing bands: '+ lineUp);
+        console.log('Venue name: ' + element.venue.name);
+        console.log('Venue location: ' + element.venue.city + ", " + element.venue.country);
+        console.log('Date: ' + moment(element.datetime).format('LLLL'));
         console.log('================================');
 //         Name of the venue
 // Venue location
