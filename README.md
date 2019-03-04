@@ -23,6 +23,10 @@ Each of these commands will be followed by an argument that will represent the "
 
 * $node liri concert-this Ariana Grande
 
+Here are the results of this query:
+
+![LIRI Screenshot](images/Concert-this-ArianaGrande-screenshot.jpg)
+
 Likewise, to get information about a specific movie, your command line will look like this:
 
 * $node liri movie-this Groundhog Day
@@ -31,6 +35,5 @@ To get information about a specific song, your command line will look like this:
 
 * $node liri spotify-this My Favorite Things
 
-![LIRI Screenshot](assets/images/TrainScheduleScreenShot.jpg)
 
 This project is maintained by Peter Tag
