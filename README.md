@@ -8,10 +8,10 @@ The purpose of this assignment is to provide users with useful information about
 
 ### Getting Started
 To use the LIRI created for this project, you will need to copy the package.json file for this project to your root node.js directory and install NPM packages for:
-Node-Spotify-API
-Axios
-Moment
-DotEnv
+* Node-Spotify-API
+* Axios
+* Moment
+* DotEnv
 
 ![LIRI Screenshot](assets/images/TrainScheduleScreenShot.jpg)
 
