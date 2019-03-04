@@ -1,5 +1,7 @@
 # LIRI-Bot
 Week 10 homework assignment
+
+[LIRI Node.js video](videos/Mar 3, 2019 11_10 PM.webm)
 ### Overview
 This project uses Node.js to create a simple language interprtation and recognition interface (LIRI) to get different types of requested information. The information is obtained using Axios and Spotify to query different URLs to get data for movies, songs and concerts.
 
