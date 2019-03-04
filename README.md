@@ -7,6 +7,8 @@ This project uses Node.js to create a simple language interprtation and recognit
 
 [LIRI-Bot demo video](https://github.com/phtag/LIRI-Bot/tree/master/videos/LIRI-Bot_demo.webm)
 
+NOTE: This project is also referenced on my portfolio page at [my portfolio](https://phtag.github.io/Updated-portfolio/)
+
 ### Purpose
 The purpose of this assignment is to provide users with useful information about upcoming concert events for bands they are interesting in seeing, information about specific movies and information about specific songs.
 
