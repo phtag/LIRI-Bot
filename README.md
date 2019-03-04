@@ -43,5 +43,17 @@ Here are the results of the above spotify-this-song query:
 
 ![LIRI Screenshot](images/Spotify-this-song-MyFavoriteThings-screenshot.jpg)
 
+Finally, the do-what-it-says query does not pass a "this" argument. Rather, it reads from the file Random.txt which should be located in your root directy for this project. This file should contain a query type, e.g., spotify-this-song, and a corresponding "this" argument, e.g., Born to Run. To execute the do-what-it-says query, invoke it from the command line as follows:
+
+* $node liri do-what-it-says
+
+For a Random.txt file containing the following line:
+
+movie-this, Good Will Hunting
+
+the following output was generated:
+
+![LIRI Screenshot](images/Do-what-it-says-GoodWillHunting-screenshot.jpg)
+
 
 This project is maintained by Peter Tag
