@@ -18,13 +18,18 @@ After installing these packages, copy all of the files from the repository to yo
 * spotify-this-song
 * movie-this
 * do-what-it-says
-Each of these commands will be followed by an argument that will represent the "this" of the above three ...-this commands. For example, if you wanted to see all the concerts that Ariana Grande will be performing in in the future, your command line will look like this:
-* $node liri concert-this Ariana Grande
-Likewise, to get information about a specific movie, your command line will look like this:
-* $node liri movie-this Groundhog Day
-To get information about a specific song, your command line will look like this:
-* $node liri spotify-this My Favorite Things
 
+Each of these commands will be followed by an argument that will represent the "this" of the above three ...-this commands. For example, if you wanted to see all the concerts that Ariana Grande will be performing in in the future, your command line will look like this:
+
+* $node liri concert-this Ariana Grande
+
+Likewise, to get information about a specific movie, your command line will look like this:
+
+* $node liri movie-this Groundhog Day
+
+To get information about a specific song, your command line will look like this:
+
+* $node liri spotify-this My Favorite Things
 
 ![LIRI Screenshot](assets/images/TrainScheduleScreenShot.jpg)
 
