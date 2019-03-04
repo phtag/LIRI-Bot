@@ -16,3 +16,30 @@ Language: English, French, Italian
 Plot: A weatherman finds himself inexplicably living the same day over and over again.
 Actors: Bill Murray, Andie MacDowell, Chris Elliott, Stephen Tobolowsky
 ===================================================================
+Movie name: Good Will Hunting
+Year released: 1997
+IMDB rating: 8.3
+Rotten Tomatoes rating: 97%
+Country where produced: USA
+Language: English
+Plot: Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.
+Actors: Matt Damon, Ben Affleck, Stellan Skarsgård, John Mighton
+===================================================================
+Movie name: Good Will Hunting
+Year released: 1997
+IMDB rating: 8.3
+Rotten Tomatoes rating: 97%
+Country where produced: USA
+Language: English
+Plot: Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.
+Actors: Matt Damon, Ben Affleck, Stellan Skarsgård, John Mighton
+===================================================================
+Movie name: Good Will Hunting
+Year released: 1997
+IMDB rating: 8.3
+Rotten Tomatoes rating: 97%
+Country where produced: USA
+Language: English
+Plot: Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.
+Actors: Matt Damon, Ben Affleck, Stellan Skarsgård, John Mighton
+===================================================================

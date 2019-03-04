@@ -43,7 +43,6 @@ function respondToUserRequest(UserRequest, queryItem) {
     fs.readFile('./random.txt', 'utf8', function(error, data) {
       var arguments = data.split(',');
       var which = arguments[0];
-      console.log(arguments[1]);
       var secondArgument = arguments[1].replace(/\"/g, "");
       var queryItem = [];
       if (secondArgument.indexOf(' ') > 0) {
@@ -51,7 +50,6 @@ function respondToUserRequest(UserRequest, queryItem) {
       } else {
         queryItem.push(secondArgument.trim());
       }
-      console.log(queryItem);
       respondToUserRequest(arguments[0], queryItem);
     });
   }
