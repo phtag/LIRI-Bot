@@ -1,0 +1,45 @@
+Performing bands: BTS
+Venue name: Rose Bowl Stadium
+Venue location: Pasadena, United States
+Date: Saturday, May 4, 2019 8:00 PM
+===================================================================
+Performing bands: BTS
+Venue name: Rose Bowl Stadium
+Venue location: Pasadena, United States
+Date: Sunday, May 5, 2019 7:30 PM
+===================================================================
+Performing bands: BTS
+Venue name: MetLife Stadium
+Venue location: East Rutherford, United States
+Date: Saturday, May 18, 2019 7:30 PM
+===================================================================
+Performing bands: BTS
+Venue name: MetLife Stadium
+Venue location: East Rutherford, United States
+Date: Sunday, May 19, 2019 7:30 PM
+===================================================================
+Performing bands: BTS
+Venue name: Soldier Field
+Venue location: Chicago, United States
+Date: Sunday, May 12, 2019 7:30 PM
+===================================================================
+Performing bands: BTS
+Venue name: Wembley Stadium
+Venue location: London, United Kingdom
+Date: Sunday, June 2, 2019 7:30 PM
+===================================================================
+Performing bands: BTS
+Venue name: Wembley Stadium
+Venue location: London, United Kingdom
+Date: Saturday, June 1, 2019 7:30 PM
+===================================================================
+Performing bands: BTS
+Venue name: Stade de France
+Venue location: Paris, France
+Date: Friday, June 7, 2019 8:00 PM
+===================================================================
+Performing bands: BTS
+Venue name: Soldier Field
+Venue location: Chicago, United States
+Date: Saturday, May 11, 2019 7:30 PM
+===================================================================
