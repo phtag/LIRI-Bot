@@ -7,7 +7,11 @@ This project uses Node.js to create a simple language interprtation and recognit
 The purpose of this assignment is to provide users with useful information about upcoming concert events for bands they are interesting in seeing, information about specific movies and information about specific songs.
 
 ### Getting Started
-To use the LIRI created for this project, you will need to install NPM packages 
+To use the LIRI created for this project, you will need to copy the package.json file for this project to your root node.js directory and install NPM packages for:
+Node-Spotify-API
+Axios
+Moment
+DotEnv
 
 ![LIRI Screenshot](assets/images/TrainScheduleScreenShot.jpg)
 
