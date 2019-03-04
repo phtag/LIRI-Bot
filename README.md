@@ -31,6 +31,10 @@ Likewise, to get information about a specific movie, your command line will look
 
 * $node liri movie-this Groundhog Day
 
+Here are the results of this query:
+
+![LIRI Screenshot](images/Movie-this-GroundhogDay-screenshot.jpg)
+
 To get information about a specific song, your command line will look like this:
 
 * $node liri spotify-this My Favorite Things
