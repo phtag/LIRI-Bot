@@ -55,5 +55,12 @@ the following output was generated:
 
 ![LIRI Screenshot](images/Do-what-it-says-GoodWillHunting-screenshot.jpg)
 
+### Outputs
+
+Not only are outputs generated to the terminal window, but they are also directed to text files. Each query has their own separate text file:
+* concert-this - Concert.txt
+* spotify-this-song - Spotify.txt
+* movie-this - Movie.txt
+
 
 This project is maintained by Peter Tag
