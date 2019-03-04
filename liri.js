@@ -116,7 +116,6 @@ function spotifyThisSong(song) {
         if (err) {
       return console.log('Error occurred: ' + err);
     }  
-    console.log(data.tracks.items[0]); 
     console.log('==================================================');
     data.tracks.items.forEach(function(element) {
       var songName = element.name;
