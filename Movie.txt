@@ -7,3 +7,12 @@ Language: English, French, Italian
 Plot: A weatherman finds himself inexplicably living the same day over and over again.
 Actors: Bill Murray, Andie MacDowell, Chris Elliott, Stephen Tobolowsky
 ===================================================================
+Movie name: Groundhog Day
+Year released: 1993
+IMDB rating: 8.0
+Rotten Tomatoes rating: 96%
+Country where produced: USA
+Language: English, French, Italian
+Plot: A weatherman finds himself inexplicably living the same day over and over again.
+Actors: Bill Murray, Andie MacDowell, Chris Elliott, Stephen Tobolowsky
+===================================================================
