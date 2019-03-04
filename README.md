@@ -4,8 +4,8 @@ Week 10 homework assignment
 
 ### Overview
 This project uses Node.js to create a simple language interprtation and recognition interface (LIRI) to get different types of requested information. The information is obtained using Axios and Spotify to query different URLs to get data for movies, songs and concerts. Please download the video "Mar 3, 2019 11_10 PM.webm" which is in the videos folder in my LIRI-Bot repository to actually watch the LIRI program being executed.
-[LIRI video](videos/Mar 3, 2019 11_10 PM.webm)
-[a link]('https://github.com/phtag/LIRI-Bot/tree/master/videos/Mar 3, 2019 11_10 PM.webm')
+
+[a link](https://github.com/phtag/LIRI-Bot/tree/master/videos/LIRI-Bot_demo.webm)
 
 ### Purpose
 The purpose of this assignment is to provide users with useful information about upcoming concert events for bands they are interesting in seeing, information about specific movies and information about specific songs.
