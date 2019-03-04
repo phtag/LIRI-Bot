@@ -12,6 +12,7 @@ To use the LIRI created for this project, you will need to copy the package.json
 * Axios
 * Moment
 * DotEnv
+
 After installing these packages, copy all of the files from the repository to your node.js root node. You will be running the liri.js file in node. This file takes in the following four commands:
 * concert-this
 * spotify-this-song
