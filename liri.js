@@ -4,6 +4,8 @@ var axios = require("axios");
 var Spotify = require('node-spotify-api'); 
 var moment = require('moment');
 var fs = require('fs');
+var divider =
+    '\n===================================================================\r\n';
 var UserRequest = process.argv[2];
 respondToUserRequest(UserRequest, process.argv.slice(3));
 
@@ -72,28 +74,33 @@ function concertThis(artist) {
           lineUp += ', ' + element;
         }
       });
+      // Convert date into a Moment.js format
+      var eventDate;
+      if (element.datetime.indexOf('-') > 0) {
+        eventDate = moment(element.datetime).format('LLLL');
+      } else {
+        eventDate = element.datetime;
+      }
+
       console.log('Performing bands: '+ lineUp);
       console.log('Venue name: ' + element.venue.name);
       console.log('Venue location: ' + element.venue.city + ", " + element.venue.country);
-      console.log('Date: ' + moment(element.datetime).format('LLLL'));
+      console.log('Date: ' + eventDate);
       console.log('================================');
  
       var concertData = [
-        'Performing bands: '+ lineUp,
+        'Performing bands: ' + lineUp,
         'Venue name: ' + element.venue.name,
         'Venue location: ' + element.venue.city + ", " + element.venue.country,
-        'Date: ' + moment(element.datetime).format('LLLL'),
-        ].join('\n\n');
-      fs.appendFile('Concert.txt', concertData, function(err) {
+        'Date: ' + eventDate,
+        ].join('\r\n');
+      fs.appendFile('Concert.txt', concertData + divider, function(err) {
           if (err) {
 
           } else {
               // console.log('Successfully wrote to actor.txt');
           }
       });
-
-
-
     })
   });
 }
@@ -116,6 +123,7 @@ function spotifyThisSong(song) {
       var qArtists = element.album.artists;
       var ArtistsNames = "";
       var external_URLs = [];
+      var releaseDate;
       // Create a list of the artists for this track
       qArtists.forEach(function(thisElement) {
         external_URLs.push(thisElement.external_urls.spotify);
@@ -129,9 +137,13 @@ function spotifyThisSong(song) {
         // Display the results for the user
         console.log('Song name: ' + songName);
         console.log('Artist(s): ' + ArtistsNames);
-        console.log('ID: ' + element.album.id);
         console.log('Album name: ' + element.album.name);
-        console.log('Album release date: ' + moment(element.album.release_date).format('LLLL'));
+        if (element.album.release_date.indexOf('-') > 0) {
+          releaseDate = moment(element.album.release_date).format('LLLL');
+        } else {
+          releaseDate = element.album.release_date;
+        }
+        console.log('Album release date: ' + releaseDate);
         console.log('Preview URLs: ' + element.preview_url);
         console.log('Total tracks: ' + element.album.total_tracks);
         console.log('==================================================');
@@ -139,13 +151,12 @@ function spotifyThisSong(song) {
         var songData = [
           'Song name: ' + songName,
           'Artist(s): ' + ArtistsNames,
-          'ID: ' + element.album.id,
           'Album name: ' + element.album.name,
-          'Album release date: ' + moment(element.album.release_date).format('LLLL'),
+          'Album release date: ' + releaseDate,
           'Preview URLs: ' + element.preview_url,
           'Total tracks: ' + element.album.total_tracks,
-        ].join('\n\n');
-        fs.appendFile('Spotify.txt', songData, function(err) {
+        ].join('\r\n');
+        fs.appendFile('Spotify.txt', songData + divider, function(err) {
             if (err) {
 
             } else {
@@ -186,8 +197,8 @@ function movieThis(movie) {
         'Language: ' + response.data.Language,
         'Plot: ' + response.data.Plot,
         'Actors: ' + response.data.Actors,  
-        ].join('\n\n');
-      fs.appendFile('Movie.txt', movieData, function(err) {
+        ].join('\r\n');
+      fs.appendFile('Movie.txt', movieData + divider, function(err) {
           if (err) {
 
           } else {
