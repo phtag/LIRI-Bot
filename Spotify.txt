@@ -1,130 +1,9 @@
-Song name: Band On The Run
-Artist(s): Paul McCartney
-ID: 0gOV46yCRVgdehR1SnFtuy
-Album name: Wingspan
-Album release date: Monday, May 7, 2001 12:00 AM
-Preview URLs: null
-Total tracks: 40
-===================================================================
-Song name: Band on the Run
-Artist(s): The Langley Schools Music Project
-ID: 3kY9Dvf6Bn8citunjQSAmQ
-Album name: Innocence and Despair
-Album release date: Sunday, December 31, 2000 4:00 PM
-Preview URLs: https://p.scdn.co/mp3-preview/26566751fc877c335b1eea2c87e1d86a152b650b?cid=8c4b5839278844528ea2d66531ba6e93
-Total tracks: 19
-===================================================================
-Song name: Band On The Run
-Artist(s): Paul McCartney
-ID: 1i7RwnOguDqvZ7myr8VDrh
-Album name: All The Best
-Album release date: Monday, November 2, 1987 12:00 AM
-Preview URLs: null
-Total tracks: 17
-===================================================================
-Song name: Band On The Run
-Artist(s): Paul McCartney
-Album name: Wingspan
-Album release date: 2001-05-07
-Album release date: Monday, May 7, 2001 12:00 AM
-Preview URLs: null
-Total tracks: 40
-===================================================================
-Song name: Band on the Run
-Artist(s): The Langley Schools Music Project
-Album name: Innocence and Despair
-Album release date: 2001
-Album release date: Sunday, December 31, 2000 4:00 PM
-Preview URLs: https://p.scdn.co/mp3-preview/26566751fc877c335b1eea2c87e1d86a152b650b?cid=8c4b5839278844528ea2d66531ba6e93
-Total tracks: 19
-===================================================================
-Song name: Band On The Run
-Artist(s): Paul McCartney
-Album name: All The Best
-Album release date: 1987-11-02
-Album release date: Monday, November 2, 1987 12:00 AM
-Preview URLs: null
-Total tracks: 17
-===================================================================
-Song name: Band On The Run
-Artist(s): Paul McCartney
-Album name: Wingspan
-Album release date: 2001-05-07
-Album release date: Monday, May 7, 2001 12:00 AM
-Preview URLs: null
-Total tracks: 40
-===================================================================
-Song name: Band on the Run
-Artist(s): The Langley Schools Music Project
-Album name: Innocence and Despair
-Album release date: 2001
-Album release date: Sunday, December 31, 2000 4:00 PM
-Preview URLs: https://p.scdn.co/mp3-preview/26566751fc877c335b1eea2c87e1d86a152b650b?cid=8c4b5839278844528ea2d66531ba6e93
-Total tracks: 19
-===================================================================
-Song name: Band On The Run
-Artist(s): Paul McCartney
-Album name: All The Best
-Album release date: 1987-11-02
-Album release date: Monday, November 2, 1987 12:00 AM
-Preview URLs: null
-Total tracks: 17
-===================================================================
-Song name: Band On The Run
-Artist(s): Paul McCartney
-Album name: Wingspan
-Album release date: 2001-05-07
-Preview URLs: null
-Total tracks: 40
-===================================================================
-Song name: Band on the Run
-Artist(s): The Langley Schools Music Project
-Album name: Innocence and Despair
-Album release date: 2001
-Preview URLs: https://p.scdn.co/mp3-preview/26566751fc877c335b1eea2c87e1d86a152b650b?cid=8c4b5839278844528ea2d66531ba6e93
-Total tracks: 19
-===================================================================
-Song name: Band On The Run
-Artist(s): Paul McCartney
-Album name: All The Best
-Album release date: 1987-11-02
-Preview URLs: null
-Total tracks: 17
-===================================================================
-Song name: Band On The Run
-Artist(s): Paul McCartney
-Album name: Wingspan
-Album release date: Monday, May 7, 2001 12:00 AM
-Preview URLs: null
-Total tracks: 40
-===================================================================
-Song name: Band on the Run
-Artist(s): The Langley Schools Music Project
-Album name: Innocence and Despair
-Album release date: 2001
-Preview URLs: https://p.scdn.co/mp3-preview/26566751fc877c335b1eea2c87e1d86a152b650b?cid=8c4b5839278844528ea2d66531ba6e93
-Total tracks: 19
-===================================================================
-Song name: Band On The Run
-Artist(s): Paul McCartney
-Album name: All The Best
-Album release date: Monday, November 2, 1987 12:00 AM
-Preview URLs: null
-Total tracks: 17
-===================================================================
 Song name: Born to Run
 Artist(s): Bruce Springsteen
 Album name: Born To Run
 Album release date: Monday, August 25, 1975 12:00 AM
 Preview URLs: https://p.scdn.co/mp3-preview/bac7b351bb2f85c715f66be9b36b8a1922081404?cid=8c4b5839278844528ea2d66531ba6e93
 Total tracks: 8
-===================================================================
-Song name: Born to Run
-Artist(s): Herb Keys
-Album name: Emotions
-Album release date: Tuesday, February 19, 2019 12:00 AM
-Preview URLs: https://p.scdn.co/mp3-preview/4263d378eb43daed8acc3f5c20ba4fdee824d28d?cid=8c4b5839278844528ea2d66531ba6e93
-Total tracks: 5
 ===================================================================
 Song name: Born to Run
 Artist(s): SEU Worship
@@ -146,4 +25,11 @@ Album name: Born to Run
 Album release date: Friday, April 27, 2018 12:00 AM
 Preview URLs: https://p.scdn.co/mp3-preview/2c8fc64619dfa9fb003f2273b9863b8318b6f4e5?cid=8c4b5839278844528ea2d66531ba6e93
 Total tracks: 1
+===================================================================
+Song name: Born to Run
+Artist(s): Herb Keys
+Album name: Emotions
+Album release date: Tuesday, February 19, 2019 12:00 AM
+Preview URLs: https://p.scdn.co/mp3-preview/4263d378eb43daed8acc3f5c20ba4fdee824d28d?cid=8c4b5839278844528ea2d66531ba6e93
+Total tracks: 5
 ===================================================================

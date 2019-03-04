@@ -5,7 +5,7 @@ var Spotify = require('node-spotify-api');
 var moment = require('moment');
 var fs = require('fs');
 var divider =
-    '\n===================================================================\r\n';
+    '\r\n===================================================================\r\n';
 var UserRequest = process.argv[2];
 respondToUserRequest(UserRequest, process.argv.slice(3));
 
