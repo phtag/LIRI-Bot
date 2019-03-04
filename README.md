@@ -57,10 +57,12 @@ the following output was generated:
 
 ### Outputs
 
-Not only are outputs generated to the terminal window, but they are also directed to text files. Each query has their own separate text file:
+The LIRI program displays query results to the terminal window. These results are also output to text files. Each query has their own separate text file:
 * concert-this - Concert.txt
 * spotify-this-song - Spotify.txt
 * movie-this - Movie.txt
+
+After invoking a LIRI query, open the corresponding text file to see the results that were displayed on in the terminal window.
 
 
 This project is maintained by Peter Tag
